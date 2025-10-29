@@ -1,0 +1,28 @@
+\doxysection{Magazin.\+h}
+\hypertarget{_magazin_8h_source}{}\label{_magazin_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ MAGAZIN\_H\_}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ MAGAZIN\_H\_}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_medium_8h}{Medium.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_datum_8h}{Datum.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_magazin_a6397156e7ce7dd671032248794131f23}{Magazin}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_medium_aa8bd867d2e3644022a117433e3321f18}{Medium}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_magazin_a6397156e7ce7dd671032248794131f23}{Magazin}}(std::string\ initTitel,\ \mbox{\hyperlink{class_datum}{Datum}}\ initDatumAusgabe,\ std::string\ initSparte);}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_magazin_abca2107906d4e9918a5b4083ab564ba6}{ausgabe}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_magazin_af5b8cf85da822026e84351c89784d054}{ausleihen}}(\mbox{\hyperlink{class_person}{Person}}\ person,\ \mbox{\hyperlink{class_datum}{Datum}}\ ausleihedatum)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_datum}{Datum}}\ datumAusgabe;}
+\DoxyCodeLine{00017\ \ \ \ \ std::string\ sparte;}
+\DoxyCodeLine{00018\ \};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ MAGAZIN\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

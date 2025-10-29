@@ -1,0 +1,73 @@
+\doxysection{addstreet Class Reference}
+\hypertarget{classaddstreet}{}\label{classaddstreet}\index{addstreet@{addstreet}}
+
+
+Dialogfenster zum Erstellen und Hinzufügen einer Straße zwischen zwei Städten.  
+
+
+Inheritance diagram for addstreet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classaddstreet}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaddstreet_abd65a6102760f11ba151bb72a65c01aa}{addstreet}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Konstruktor des Dialogs zum Hinzufügen einer Straße. \end{DoxyCompactList}\item 
+\Hypertarget{classaddstreet_a19b360f20f3031864713cf1da4fe6252}\label{classaddstreet_a19b360f20f3031864713cf1da4fe6252} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}addstreet} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. Gibt das UI-\/\+Objekt frei. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_street}{Street}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classaddstreet_a930f65dabcb09ddfa37fac32f2acacac}{create\+Street}} (\mbox{\hyperlink{class_map}{Map}} \&map)
+\begin{DoxyCompactList}\small\item\em Erstellt eine neue \doxylink{class_street}{Street} zwischen zwei Städten, sofern beide in der \doxylink{class_map}{Map} existieren. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Dialogfenster zum Erstellen und Hinzufügen einer Straße zwischen zwei Städten. 
+
+Diese Klasse bietet eine Benutzeroberfläche zur Eingabe von Start-\/ und Zielstadt. Nach Bestätigung wird eine \doxylink{class_street}{Street} zwischen den angegebenen Städten erstellt, sofern beide in der \doxylink{class_map}{Map} vorhanden sind. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaddstreet_abd65a6102760f11ba151bb72a65c01aa}\index{addstreet@{addstreet}!addstreet@{addstreet}}
+\index{addstreet@{addstreet}!addstreet@{addstreet}}
+\doxysubsubsection{\texorpdfstring{addstreet()}{addstreet()}}
+{\footnotesize\ttfamily \label{classaddstreet_abd65a6102760f11ba151bb72a65c01aa} 
+addstreet\+::addstreet (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Konstruktor des Dialogs zum Hinzufügen einer Straße. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Zeiger auf das übergeordnete Widget \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaddstreet_a930f65dabcb09ddfa37fac32f2acacac}\index{addstreet@{addstreet}!createStreet@{createStreet}}
+\index{createStreet@{createStreet}!addstreet@{addstreet}}
+\doxysubsubsection{\texorpdfstring{createStreet()}{createStreet()}}
+{\footnotesize\ttfamily \label{classaddstreet_a930f65dabcb09ddfa37fac32f2acacac} 
+\mbox{\hyperlink{class_street}{Street}} \texorpdfstring{$\ast$}{*} addstreet\+::create\+Street (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_map}{Map}} \&}]{map}{}\end{DoxyParamCaption})}
+
+
+
+Erstellt eine neue \doxylink{class_street}{Street} zwischen zwei Städten, sofern beide in der \doxylink{class_map}{Map} existieren. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & Referenz auf die aktuelle \doxylink{class_map}{Map} zur Stadtsuche \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zeiger auf das neue Street-\/\+Objekt oder nullptr, wenn Eingabe ungültig ist 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+addstreet.\+h\item 
+addstreet.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,32 @@
+\doxysection{Medium.\+cpp File Reference}
+\hypertarget{_medium_8cpp}{}\label{_medium_8cpp}\index{Medium.cpp@{Medium.cpp}}
+{\ttfamily \#include "{}Medium.\+h"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{_medium_8cpp_ac8d95950f85d491efc083e1c446e75e0}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_medium}{Medium}} \&medium)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Praktikum Informatik 1 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_medium_8cpp_ac8d95950f85d491efc083e1c446e75e0}\index{Medium.cpp@{Medium.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Medium.cpp@{Medium.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{_medium_8cpp_ac8d95950f85d491efc083e1c446e75e0} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{, }\item[{const \mbox{\hyperlink{class_medium}{Medium}} \&}]{medium}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{class_person}{Person}} & person\+: \doxylink{class_person}{Person} die das \doxylink{class_medium}{Medium} ausleihen m{\ucr}chte \\
+\hline
+{\em \doxylink{class_datum}{Datum}} & ausleihdatum\+: \doxylink{class_datum}{Datum} an dem das \doxylink{class_medium}{Medium} ausgeliehen wird\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\+: true, wenn die Ausleihbeschr{\ucr}nkungen erf{\ucr}llt sind und das \doxylink{class_medium}{Medium} ausgeliehen werden kann false, wenn die Ausleihbeschr{\ucr}nkungen nicht erf{\ucr}llt sind und das \doxylink{class_medium}{Medium} nicht ausgeliehen werden kann 
+\end{DoxyReturn}

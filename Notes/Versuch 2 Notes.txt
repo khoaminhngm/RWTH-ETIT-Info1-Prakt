@@ -1,0 +1,28 @@
+Fehler in Versuch 2 Teil 2:
+	
+	int newFib = previousFib + currentFib ;
+    previousFib = newFib ;
+    currentFib = previousFib ;
+    
+Korrektur:
+
+	int newFib = previousFib + currentFib ;
+    previousFib = currentFib ;
+    currentFib = newFib ;
+    
+Geschwindigkeitsvergleich zwischen Fibonacci.cpp aus Teil 1 und fibonacci.cpp aus Teil 2:
+	
+	Für fibonacci.cpp aus Teil 2: 0.054042 ms
+	Für Fibonacci.cpp aus Teil 1: 31119.8 ms
+	
+Rekursive Berechnung dauert viel länger als iterative, da:
+	rekursiv hat O(2^n) --> exponentiell
+	iterative hat O(n) --> linear
+	
+	
+Warum geben beide Programme ein falsches Ergebnis bei n = 47?
+	Wegen Integer - Overflow --> da f(47) > (2^31 - 1)
+	Größte berechenbare Fibonaccizahl: f(46) = 1836311903 < (2^31 - 1)
+	
+Korrektur:
+	Mit Variablentyp long kann man Zahlen bis zu 2^64 speichern und dies soll implementiert werden, da es keine negativen fib Zahlen gibt

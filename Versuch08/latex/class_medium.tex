@@ -1,0 +1,160 @@
+\doxysection{Medium Class Reference}
+\hypertarget{class_medium}{}\label{class_medium}\index{Medium@{Medium}}
+
+
+Basisklasse f{\ucr}r s{\ucr}mtliche Medien.  
+
+
+
+
+{\ttfamily \#include $<$Medium.\+h$>$}
+
+Inheritance diagram for Medium\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_medium}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_medium_aa8bd867d2e3644022a117433e3321f18}{Medium}} (std\+::string init\+Titel)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\Hypertarget{class_medium_a77264993251b16f49de7cfc2a079eae2}\label{class_medium_a77264993251b16f49de7cfc2a079eae2} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Medium} (void)
+\begin{DoxyCompactList}\small\item\em virtueller Destruktor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_medium_a4ef72a6165d29497d26d0825a0f3b486}{ausgabe}} () const =0
+\begin{DoxyCompactList}\small\item\em Ausgabefunktion. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_medium_a98261c5da2a63906799f298cbbcd66b8}{ausleihen}} (\mbox{\hyperlink{class_person}{Person}} person, \mbox{\hyperlink{class_datum}{Datum}} ausleihdatum)
+\item 
+\Hypertarget{class_medium_a243e7659e4c9596061a5d5805ae271c4}\label{class_medium_a243e7659e4c9596061a5d5805ae271c4} 
+void {\bfseries zurueckgeben} ()
+\begin{DoxyCompactList}\small\item\em Gibt ein \doxylink{class_medium}{Medium} in die B{\ucr}cherei zur{\ucr}ck. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_medium_a7bc65e286218957af48211f6ace30789}{get\+ID}} ()
+\begin{DoxyCompactList}\small\item\em ID des Mediums. \end{DoxyCompactList}\item 
+\Hypertarget{class_medium_ad2cc4f0e904ac1590924ae4743b96cc0}\label{class_medium_ad2cc4f0e904ac1590924ae4743b96cc0} 
+bool {\bfseries get\+Status} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_medium_a5e72a311f06810444cde614ddbc4b31f}\label{class_medium_a5e72a311f06810444cde614ddbc4b31f} 
+unsigned int {\bfseries ID}
+\begin{DoxyCompactList}\small\item\em Eindeutige ID des Mediums. \end{DoxyCompactList}\item 
+\Hypertarget{class_medium_ab76783269f8b09141d7b2168b008429d}\label{class_medium_ab76783269f8b09141d7b2168b008429d} 
+std\+::string {\bfseries titel}
+\begin{DoxyCompactList}\small\item\em Titel des Mediums. \end{DoxyCompactList}\item 
+\Hypertarget{class_medium_a41d79c1b3b57a54c8b372a8e36f1b5c9}\label{class_medium_a41d79c1b3b57a54c8b372a8e36f1b5c9} 
+bool {\bfseries status}
+\begin{DoxyCompactList}\small\item\em Status des Mediums (true\+: ausgeliehen, false\+: nicht ausgeliehen) \end{DoxyCompactList}\item 
+\Hypertarget{class_medium_af7a2605566e899641b075f51893948c7}\label{class_medium_af7a2605566e899641b075f51893948c7} 
+\mbox{\hyperlink{class_datum}{Datum}} {\bfseries datum\+Ausgeliehen}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_datum}{Datum} seit dem das \doxylink{class_medium}{Medium} ausgeliehen ist. \end{DoxyCompactList}\item 
+\Hypertarget{class_medium_a2dcfa7b252fea996b5cb6551f735f252}\label{class_medium_a2dcfa7b252fea996b5cb6551f735f252} 
+\mbox{\hyperlink{class_person}{Person}} {\bfseries person\+Ausgeliehen}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_person}{Person}, die das \doxylink{class_medium}{Medium} ausgeliehen hat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_medium_ac48d0988284d67e8bdf54b8fab9ebbe8}\label{class_medium_ac48d0988284d67e8bdf54b8fab9ebbe8} 
+static unsigned int {\bfseries current\+ID} = 1
+\begin{DoxyCompactList}\small\item\em Statische Variable zum Erzeugen der fortlaufenden IDs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_medium_ac8d95950f85d491efc083e1c446e75e0}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_medium}{Medium}} \&medium)
+\begin{DoxyCompactList}\small\item\em Ausleihen-\/\+Funktion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Basisklasse f{\ucr}r s{\ucr}mtliche Medien. 
+
+Diese Klasse stellt eine Basisklasse f{\ucr}r Objekte dar, die Medien beschreiben Von dieser Klasse werden alle anderen Medien, wie z.\+B. \doxylink{class_buch}{Buch} oder \doxylink{class_d_v_d}{DVD} abgeleitet 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_medium_aa8bd867d2e3644022a117433e3321f18}\index{Medium@{Medium}!Medium@{Medium}}
+\index{Medium@{Medium}!Medium@{Medium}}
+\doxysubsubsection{\texorpdfstring{Medium()}{Medium()}}
+{\footnotesize\ttfamily \label{class_medium_aa8bd867d2e3644022a117433e3321f18} 
+Medium\+::\+Medium (\begin{DoxyParamCaption}\item[{std\+::string}]{init\+Titel}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+Konstruktor der Klasse \doxylink{class_medium}{Medium}
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & init\+Titel\+: Titel des Mediums \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_medium_a4ef72a6165d29497d26d0825a0f3b486}\index{Medium@{Medium}!ausgabe@{ausgabe}}
+\index{ausgabe@{ausgabe}!Medium@{Medium}}
+\doxysubsubsection{\texorpdfstring{ausgabe()}{ausgabe()}}
+{\footnotesize\ttfamily \label{class_medium_a4ef72a6165d29497d26d0825a0f3b486} 
+void Medium\+::ausgabe (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Ausgabefunktion. 
+
+Funktion gibt alle Informationen eines Mediums auf der Konsole aus 
+
+Implemented in \mbox{\hyperlink{class_buch_a346e8acd888f5293dc3ec80593443a4d}{Buch}}, \mbox{\hyperlink{class_d_v_d_a9ccced7d4e90a56955104797d1751c78}{DVD}}, and \mbox{\hyperlink{class_magazin_abca2107906d4e9918a5b4083ab564ba6}{Magazin}}.
+
+\Hypertarget{class_medium_a98261c5da2a63906799f298cbbcd66b8}\index{Medium@{Medium}!ausleihen@{ausleihen}}
+\index{ausleihen@{ausleihen}!Medium@{Medium}}
+\doxysubsubsection{\texorpdfstring{ausleihen()}{ausleihen()}}
+{\footnotesize\ttfamily \label{class_medium_a98261c5da2a63906799f298cbbcd66b8} 
+bool Medium\+::ausleihen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_person}{Person}}}]{person}{, }\item[{\mbox{\hyperlink{class_datum}{Datum}}}]{ausleihdatum}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_d_v_d_acaced8e96915593e16b650d82a03c8fd}{DVD}}, and \mbox{\hyperlink{class_magazin_af5b8cf85da822026e84351c89784d054}{Magazin}}.
+
+\Hypertarget{class_medium_a7bc65e286218957af48211f6ace30789}\index{Medium@{Medium}!getID@{getID}}
+\index{getID@{getID}!Medium@{Medium}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily \label{class_medium_a7bc65e286218957af48211f6ace30789} 
+unsigned int Medium\+::get\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+ID des Mediums. 
+
+\begin{DoxyReturn}{Returns}
+int\+: gibt die ID des Mediums zur{\ucr}ck 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_medium_ac8d95950f85d491efc083e1c446e75e0}\index{Medium@{Medium}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Medium@{Medium}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_medium_ac8d95950f85d491efc083e1c446e75e0} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{, }\item[{const \mbox{\hyperlink{class_medium}{Medium}} \&}]{medium}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Ausleihen-\/\+Funktion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{class_person}{Person}} & person\+: \doxylink{class_person}{Person} die das \doxylink{class_medium}{Medium} ausleihen m{\ucr}chte \\
+\hline
+{\em \doxylink{class_datum}{Datum}} & ausleihdatum\+: \doxylink{class_datum}{Datum} an dem das \doxylink{class_medium}{Medium} ausgeliehen wird\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\+: true, wenn die Ausleihbeschr{\ucr}nkungen erf{\ucr}llt sind und das \doxylink{class_medium}{Medium} ausgeliehen werden kann false, wenn die Ausleihbeschr{\ucr}nkungen nicht erf{\ucr}llt sind und das \doxylink{class_medium}{Medium} nicht ausgeliehen werden kann 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_medium_8h}{Medium.\+h}}\item 
+\mbox{\hyperlink{_medium_8cpp}{Medium.\+cpp}}\end{DoxyCompactItemize}

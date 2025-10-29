@@ -1,0 +1,23 @@
+\doxysection{DVD.\+h}
+\hypertarget{_d_v_d_8h_source}{}\label{_d_v_d_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ DVD\_H\_}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ DVD\_H\_}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_medium_8h}{Medium.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_d_v_d_aa97609c2c72c1206ba9c2ea868b97a2e}{DVD}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_medium_aa8bd867d2e3644022a117433e3321f18}{Medium}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_d_v_d_aa97609c2c72c1206ba9c2ea868b97a2e}{DVD}}(std::string\ initTitel,\ \textcolor{keywordtype}{int}\ initAltersfreigabe,\ std::string\ initGenre);}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_d_v_d_a9ccced7d4e90a56955104797d1751c78}{ausgabe}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_d_v_d_acaced8e96915593e16b650d82a03c8fd}{ausleihen}}(\mbox{\hyperlink{class_person}{Person}}\ person,\ \mbox{\hyperlink{class_datum}{Datum}}\ ausleihedatum)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ altersFreigabe;}
+\DoxyCodeLine{00016\ \ \ \ \ std::string\ genre;}
+\DoxyCodeLine{00017\ \};}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DVD\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}
